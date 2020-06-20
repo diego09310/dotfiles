@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
+working_dir=`pwd`
 pushd ~
 
-ln -s dotfiles/.vimrc .
-ln -s dotfiles/.vim .
-ln -s dotfiles/.tmux.conf .
+ln -s ${working_dir}/.vimrc .
+ln -s ${working_dir}/.vim .
+#ln -s dotfiles/.tmux.conf .
 
 mkdir -p .config/nvim
 

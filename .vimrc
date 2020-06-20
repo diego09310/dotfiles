@@ -13,6 +13,7 @@ let g:airline_extensions = []
 " Solarized theme
 syntax enable
 set background=dark
+let g:solarized_termtrans = 1
 colorscheme solarized
 
 " Tabs
