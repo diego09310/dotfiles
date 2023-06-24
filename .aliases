@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# git
+alias gp='git pull'
+alias gh='git push'
+alias ghu='git push -u'
+alias ghoh='ghu origin HEAD'
+alias ga='git add'
+alias gaa='git add -u'
+alias gaaa='git add .'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias guc='git reset  HEAD~'
+alias gca='git commit --amend'
+alias gs='git status'
+alias go='git checkout'
+alias gom='go master'
+alias gd='git diff'
+alias gddm='git diff master'
+alias gdmm='git diff `git merge-base master $(git rev-parse --abbrev-ref HEAD)`'
+alias gm='git merge'
+alias gmm='git merge master'
+alias ggrep='git grep'
+alias gfind='git ls-files'
+alias grl='git reflog'
+alias grld='grl --date=iso'
+alias gl='git log'
+
+# Docker compose
+alias dc='docker-compose'
+alias dcb='docker-compose build'
+alias dcu='docker-compose up'
+alias dcbu='docker-compose up --build'
+
+alias install='sudo apt install'
+alias vi='nvim'
+alias gistory='history | grep'
+alias listory='history | less'
+alias findme="find ./ -name"
+alias clean~="find ./ -name \"*~\" -type f -delete"
+alias cd..="cd .."
+
+# Dotfiles managment
+alias gitdf="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree ~"

@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+    "window.zoomLevel": 1,
+    "editor.fontLigatures": true,
+    "editor.selectionClipboard": false
+}
