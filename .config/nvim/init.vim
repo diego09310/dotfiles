@@ -33,6 +33,27 @@ set undodir=~/.vim/.undo//
 " http://vim.wikia.com/wiki/Editing_crontab
 au BufEnter /private/tmp/crontab.* setl backupcopy=yes
 
+"""""""""""""""""""""""
+"   Persist history   "
+"""""""""""""""""""""""
+" guard for distributions lacking the persistent_undo feature.
+if has('persistent_undo')
+    " define a path to store persistent_undo files.
+    let target_path = expand('~/.config/vim-persisted-undo/')
+
+    " create the directory and any parent directories
+    " if the location does not exist.
+    if !isdirectory(target_path)
+        call system('mkdir -p ' . target_path)
+    endif
+
+    " point Vim to the defined undo directory.
+    let &undodir = target_path
+
+    " finally, enable undo persistence.
+    set undofile
+endif
+
 """"""""""""
 " Mappings "
 """"""""""""
@@ -57,3 +78,4 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
 lua require("init")
+
