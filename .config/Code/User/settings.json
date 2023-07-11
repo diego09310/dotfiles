@@ -4,5 +4,6 @@
     "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
     "window.zoomLevel": 1,
     "editor.fontLigatures": true,
-    "editor.selectionClipboard": false
+    "editor.selectionClipboard": false,
+    "window.titleBarStyle": "custom"
 }

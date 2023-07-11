@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/Applications/idea-IC-231.9161.38/bin/
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
@@ -16,3 +16,8 @@ source $HOME/.aliases
 unsetopt BEEP
 unsetopt histverify
 
+
+export NVM_DIR="$HOME/.nvm"
+export EDITOR=/usr/local/bin/nvim
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

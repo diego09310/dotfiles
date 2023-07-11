@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make aliases work with sudo
+alias sudo="sudo "
+
 # git
 alias gp='git pull'
 alias gh='git push'
