@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Stop executing on error
+set -e
+
 shopt -s expand_aliases
 
 GIT_REPO_URL=git@github.com:diego09310/dotfiles.git

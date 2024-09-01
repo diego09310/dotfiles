@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 shopt -s expand_aliases
 
 GIT_REPO_URL=git@github.com:diego09310/dotfiles.git
@@ -10,7 +12,6 @@ DOTFILES_PATH=$BASE_FOLDER/$DOTFILES_FOLDER
 # For styling
 bold=$(tput bold)
 normal=$(tput sgr0)
-
 
 cd $BASE_FOLDER
 echo "$DOTFILES_FOLDER" >> .gitignore
