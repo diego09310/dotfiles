@@ -16,7 +16,7 @@ alias gcm='git commit -m'
 alias guc='git reset  HEAD~'
 alias gca='git commit --amend'
 alias gs='git status'
-alias go='git checkout'
+alias gco='git checkout'
 alias gom='go master'
 alias gd='git diff'
 alias gddm='git diff master'
@@ -30,10 +30,10 @@ alias grld='grl --date=iso'
 alias gl='git log'
 
 # Docker compose
-alias dc='docker-compose'
-alias dcb='docker-compose build'
-alias dcu='docker-compose up'
-alias dcbu='docker-compose up --build'
+alias dc='docker compose'
+alias dcb='docker compose build'
+alias dcu='docker compose up'
+alias dcbu='docker compose up --build'
 
 alias install='sudo apt install'
 alias vi='nvim'
@@ -42,6 +42,18 @@ alias listory='history | less'
 alias findme="find ./ -name"
 alias clean~="find ./ -name \"*~\" -type f -delete"
 alias cd..="cd .."
+alias wifipass="nmcli device wifi show-password"
+alias myip="hostname -I | awk '{print \$1}'"
+
+# esp-idf
+alias espi=". $HOME/Applications/esp-idf/export.sh"
+alias esp="idf.py"
+alias espb="idf.py build"
+alias espbf="idf.py build flash"
+alias espbfm="idf.py build flash monitor"
+alias espfm="idf.py flash monitor"
+alias espm="idf.py monitor"
+alias espmc="idf.py menuconfig"
 
 # Dotfiles managment
 alias gitdf="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree ~"

@@ -4,23 +4,21 @@ if [[ -f "$HOME/.path" ]]; then
     source $HOME/.path
 fi
 
+export EDITOR='nvim'
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 HYPHEN_INSENSITIVE="true"
-
 plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-
-export EDITOR='nvim'
-
-source $HOME/.aliases
 unsetopt BEEP
 unsetopt histverify
 
+source $ZSH/oh-my-zsh.sh
+source $HOME/.omz_prompt
 
-export NVM_DIR="$HOME/.nvm"
-export EDITOR=/usr/local/bin/nvim
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source $HOME/.aliases
+
+if [[ -f "$HOME/.zshrc_extras" ]]; then
+    source $HOME/.zshrc_extras
+fi
+

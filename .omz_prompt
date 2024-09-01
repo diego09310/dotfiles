@@ -1,0 +1,13 @@
+setopt PROMPT_SUBST
+RESULT_PREV='%(?:%F{green}✔%f:%F{red}✘%f)'
+DIRECTORY='%F{blue}%~%f'
+PROMPT_SYMBOL='%(!.#.$)'
+PROMPT='$RESULT_PREV $DIRECTORY $(git_prompt_info)$PROMPT_SYMBOL '
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%F{red}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%f %F{yellow}✗%f"
+ZSH_THEME_GIT_PROMPT_CLEAN="%f"
+
+# TIME='%F{green}%*%f'
+RPROMPT='%F{green}%M%f' # Hostname
+
