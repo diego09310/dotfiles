@@ -12,7 +12,7 @@ Here are my dotfiles. It contains configurations for the following programs:
 Move or remove conflicting files in your home directory and the files in the repo before running the script.
 
 ```
-sh -c "$(wget https://raw.githubusercontent.com/diego09310/dotfiles/main/.setup/install.sh -O\n-)"
+sh -c "$(wget https://raw.githubusercontent.com/diego09310/dotfiles/main/.setup/install.sh)"
 ```
 
 ## Credits

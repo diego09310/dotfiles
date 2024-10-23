@@ -4,17 +4,18 @@ if [[ -f "$HOME/.path" ]]; then
     source $HOME/.path
 fi
 
-export EDITOR='nvim'
+export EDITOR=`which nvim`
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 HYPHEN_INSENSITIVE="true"
 plugins=(git)
-unsetopt BEEP
-unsetopt histverify
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.omz_prompt
+
+unsetopt BEEP
+unsetopt histverify
 
 source $HOME/.aliases
 
