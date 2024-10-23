@@ -55,5 +55,14 @@ alias espfm="idf.py flash monitor"
 alias espm="idf.py monitor"
 alias espmc="idf.py menuconfig"
 
+alias esp8i="export IDF_PATH=~/esp/ESP8266_RTOS_SDK"
+alias esp8ba="make all"
+alias esp8b="make app"
+alias esp8bf="make flash"
+alias esp8bfm="make app flash monitor"
+alias esp8fm="make flash monitor"
+alias esp8m="make monitor"
+alias esp8mc="make menuconfig"
+
 # Dotfiles managment
 alias gitdf="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree ~"
